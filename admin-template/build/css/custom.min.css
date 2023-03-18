@@ -1542,10 +1542,11 @@ body {
 	float: left;
 	display: block;
 	color:#000
+
 }
 
 .page-title .title_left h3 {
-	margin: 9px 0
+	margin: 30px 0
 }
 
 .page-title .title_right {
@@ -6230,6 +6231,7 @@ ul.notifications {
 	padding: 0.75rem 1rem;
 	border-radius: 0.5rem;
 	background-color: white;
+	
 }
 
 .page li {
@@ -6237,16 +6239,19 @@ ul.notifications {
 	padding: 0.75rem 1rem;
 	border-radius: 0.5rem;
 	color: black;
+
 }
 
 .page a li {
 	background-color: while;
 	border: 1px solid #3399ff;
+	font-size: 8px;
 }
 
 .page a:hover li {
 	border-color: #999;
 	color: #777;
+	
 }
 
 .page a.bck li {
@@ -6255,6 +6260,7 @@ ul.notifications {
 	border-color: #169F85;
 	font-weight: 600;
 	box-shadow: 0 0.5rem 1rem #999;
+	
 }
 .more {
 	list-style: none;
@@ -6293,9 +6299,12 @@ ul.notifications {
 	width: 180px;
 	height: 200px;	
 	border: 3px solid black;
-	margin: 0.2px 10px;
+	margin: 5px 10px;
 	cursor: pointer;
 	position: relative;
 	display: flex;
 	justify-content: center;
+}
+.page{
+	text-align: right;
 }
