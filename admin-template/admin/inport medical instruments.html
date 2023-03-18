@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>Admin</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>General</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="Home.html">Trang chủ</a></li>
+                                        <li><a href="Medicine.html">Thuốc</a></li>
+                                        <li><a href="Medical Instruments.html">Dụng cụ y tế</a></li>
+                                        <li><a href="user.html">Người dùng</a></li>
+                                    </ul>
+                                </li>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
+                                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">John Doe
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">Help</a>
+                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>
+                                        Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>SẢN PHẨM</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Thông tin sản phẩm <small>Điền thông tin thiết bị</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+                            <br />
+                            <form class="form-horizontal form-label-left">
+                                <!--TÊN Sản Phẩm-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Tên</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" id="one-ins" class="form-control" placeholder="Tên sản phẩm">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tên sản phẩm-->
+
+                                <!--ảnh-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Ảnh</label>
+                                    <div class="col-md-5 col-sm-9">
+                                        <input type="file" placeholder="chọn ảnh">
+                                    </div>
+                                </div>
+                                <!--ảnh-->
+
+                                <!--Giới thiệu chung về sản phẩm-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Giới thiệu chung về sản phẩm<span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="two-ins" rows="3" placeholder="Mời nhập"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Giới thiệu chung về sản phẩm-->
+
+                                <!--Thông số kĩ thuật-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Thông số kĩ thuật<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="three-ins" rows="3" placeholder="Nhập thông số liệu"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Thông số kĩ thuật-->
+                                <!--Ưu điểm nổi bật-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Ưu điểm nổi bật<span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="four-ins" rows="3" placeholder="Ưu điểm"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Ưu điểm nổi bật-->
+                                <!--Hướng dẫn sử dụng-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Hướng dẫn sử dụng<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="five-ins" rows="3" placeholder=" Nhập hướng dẫn sử dụng"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Hướng dẫn sử dụng-->
+                                <!--Lưu ý-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Lưu ý<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="six-ins" rows="3" placeholder="Lưu ý"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Lưu ý-->
+                                <!--Hạn sử dụng-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Hạn sử dụng</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="seven-ins" placeholder="mời nhập hạn sử dụng (X năm;số lần sử dụng tối đa)">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Hạn sử dụng-->
+                                <!--TÊN Sản Phẩm-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Bảo hành</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="eight-ins" placeholder="Mời nhập bảo hành (X ngày , X Tháng hoặc X năm)">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tên sản phẩm-->
+                                <!--TÊN Sản Phẩm-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Liên hệ bảo hành</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="nine-ins" placeholder="mời nhập số điện thoại trung tâm bảo hành của sản phẩm">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tên sản phẩm-->
+                                <!--nội dung sản phẩm-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">bảo quản<span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-5 ">
+                                        <textarea class="form-control" id="ten-ins" rows="3" placeholder="Nhập hướng dẫn bảo quản"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--nội dung sản phẩm-->
+                                <!--nội dung sản phẩm-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Xuất xứ<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-5 ">
+                                        <textarea class="form-control" id="tenn-ins" rows="3" placeholder="Xuất xứ (công ti sản xuất; địa chỉ ;quốc tịch)"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                    <div class="col-md-9 col-sm-9  offset-md-3">
+                                        <button type="submit" class="btn btn-success">Nhập vào</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <footer>
+        <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="">Colorlib</a>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content -->
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <!--ckedittor-->
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../admin/js/validate/validIns.js"></script>
+
+</body>
+
+</html>

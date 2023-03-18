@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="../vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="../vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="Home.html" class="site_title"><i class="fa fa-paw"></i> <span>Admin</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>John Doe</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>General</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="Home.html">Trang chủ</a></li>
+                                        <li><a href="Medicine.html">Thuốc</a></li>
+                                        <li><a href="Medical Instruments.html">Dụng cụ y tế</a></li>
+                                        <li><a href="user.html">Người dùng</a></li>
+                                    </ul>
+                                </li>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
+                                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">John Doe
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;">Help</a>
+                                    <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>
+                                        Log Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>SẢN PHẨM</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-12 ">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>Thông tin sản phẩm <small>Điền thông tin thuốc</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+                            <br />
+                            <form class="form-horizontal form-label-left " >
+                                <!--TÊN THUỐC-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Tên</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" id="one-medicine" class="form-control" placeholder="Tên sản phẩm" >
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tên THUỐC-->
+
+                                <!--ảnh-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Ảnh</label>
+                                    <div class="col-md-5 col-sm-9">
+                                        <input type="file" placeholder="chọn ảnh" >
+                                    </div>
+                                </div>
+                                <!--ảnh-->
+                                <!--Thành phần-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Mô tả <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="two-medicine" rows="3"
+                                            placeholder="Mô tả sản phẩm"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Thành phần-->
+
+                                <!--loai-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Loại thuốc</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="three-medicine" placeholder="nhập loại thuốc" >
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--loai-->
+
+
+                                <!--hoạt tính-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Hoạt tính</label>
+                                    <div class="col-md-3 col-sm-9 ">
+                                        <input type="text" class="form-control" id="four-medicine" placeholder="Mời nhập số liệu">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--hoạt tính-->
+
+
+
+                                <!--hình thức-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">hình thức</label>
+                                    <div class="col-md-3 col-sm-9 ">
+                                        <input type="text" id="fire-medicine" class="form-control"
+                                            placeholder=" Nhập mô tả (viên nén,viên nhộng ,bột, ........)">
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--hình thức-->
+
+
+                                <!--Thành phần-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Thành phần <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="fires-medicine" rows="3"
+                                            placeholder="Mời nhập thành phần thuốc"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Thành phần-->
+
+                                <!--chỉ định -->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 "> chỉ định<span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="six-medicine" rows="3"
+                                            placeholder="Nên dùng thuốc khi...."></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--chỉ định-->
+                                <!--Chống chỉ định-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Chống chỉ định <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="seven-medicine" rows="3"
+                                            placeholder="Không nên sử dụng với ....."></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Chống chỉ định-->
+                                <!--Liều dùng-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Liều dùng <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="eight-medicine" rows="3"
+                                            placeholder="Liều dùng"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Liều dùng-->
+                                <!--Tác dụng phụ -->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Tác dụng phụ <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="nine-medicine" rows="3"
+                                            placeholder="Tác dụng phụ"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tác dụng phụ-->
+                                <!--Lưu ý -->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Lưu ý<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="ten-medicine" rows="3"
+                                            placeholder="Mời nhập lưu ý"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Lưu ý-->
+
+                                <!--Bảo quản-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Bảo quản <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+
+                                        <textarea class="form-control" id="tenn-medicine" rows="3"
+                                            placeholder="Hướng dẫn bảo quản"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Bảo quản-->
+                                <!--Đóng gói -->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Đóng gói <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-9 ">
+
+                                        <textarea class="form-control" id="tennn-medicine" rows="3"
+                                            placeholder="Nhập số liệu đóng gói(Bao nhêu sản phẩm trong 1 hộp;vỉ;lọ......)"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Đóng gói -->
+
+                                <!--Thương hiệu-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Thương hiệu</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" id="tennnn-medicine" class="form-control" placeholder="Nhập công ty sản xuất">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Thương hiệu-->
+
+                                <!--Hạn sử dụng-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Hạn sử dụng</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="tennnnn-medicine"
+                                            placeholder="hạn sử dụng(Xngày ,Xtháng hoặc Xnăm kể từ ngày sản xuất)">
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Hạn sử dụng-->
+
+                                <!--nơi sản xuất -->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">nơi sản xuất <span
+                                            class="required">*</span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-3 ">
+
+                                        <textarea class="form-control" id="tennnnnn-medicine" rows="3"
+                                            placeholder="nhập nơi sản xuất(công ti sản xuất; địa chỉ ;quốc tịch)"></textarea>
+                                            <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--nơi sản xuất-->
+
+
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                    <div class="col-md-9 col-sm-9  offset-md-3">
+                                        <button type="submit" class="btn btn-success">Nhập vào</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /page content -->
+    <footer>
+        <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="">Colorlib</a>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <script src="../admin/js/validate/index.js"></script>
+
+</body>
+
+</html>
+
