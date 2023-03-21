@@ -67,8 +67,8 @@
                                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="Home.html">Trang chủ</a></li>
-                                        <li><a href="Medicine.html">Thuốc</a></li>
-                                        <li><a href="Medical Instruments.html">Dụng cụ y tế</a></li>
+                                        <li><a href="ListMedicine.html">Thuốc</a></li>
+                                        <li><a href="ListMedicinneEq.html">Dụng cụ y tế</a></li>
                                         <li><a href="user.html">Người dùng</a></li>
                                     </ul>
                                 </li>
@@ -97,6 +97,11 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-usermenu pull-right"
                                     aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
                                     <a class="dropdown-item" href="javascript:;">Help</a>
                                     <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>
                                         Log Out</a>
@@ -119,11 +124,10 @@
 
                     </div>
                 </div>
-
                 <div class="col-md-12 ">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Thông tin sản phẩm <small>Điền thông tin thuốc</small></h2>
+                            <h2>Thông tin sản phẩm <small>Điền thông tin thiết bị</small></h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                 </li>
@@ -133,224 +137,133 @@
                         <div class="x_content">
 
                             <br />
-                            <form class="form-horizontal form-label-left " >
-                                <!--js phần này admin/js/validate/validate.js-->
-                                <!--TÊN THUỐC-->
+                            <form class="form-horizontal form-label-left">
+                                <!--js phần này admin/js/validate/index.js-->
+                                <!--TÊN Sản Phẩm-->
                                 <div class="form-group row ">
                                     <label class="control-label col-md-3 col-sm-3 ">Tên</label>
                                     <div class="col-md-5 col-sm-9 ">
-                                        <input type="text" id="one-medicine" class="form-control" placeholder="Tên sản phẩm" >
+                                        <input type="text" id="one-ins" class="form-control" placeholder="Tên sản phẩm">
                                         <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--Tên THUỐC-->
+                                <!--Tên sản phẩm-->
 
                                 <!--ảnh-->
                                 <div class="form-group row ">
                                     <label class="control-label col-md-3 col-sm-3 ">Ảnh</label>
                                     <div class="col-md-5 col-sm-9">
-                                        <input type="file" placeholder="chọn ảnh" >
+                                        <input type="file" placeholder="chọn ảnh">
                                     </div>
                                 </div>
                                 <!--ảnh-->
-                                <!--Thành phần-->
+
+                                <!--Giới thiệu chung về sản phẩm-->
                                 <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Mô tả <span
-                                            class="required">*</span>
+                                    <label class="control-label col-md-3 col-sm-3 ">Giới thiệu chung về sản phẩm<span
+                                            class="required"></span>
                                     </label>
                                     <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="two-medicine" rows="3"
-                                            placeholder="Mô tả sản phẩm"></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Thành phần-->
-
-                                <!--loai-->
-                                <div class="form-group row ">
-                                    <label class="control-label col-md-3 col-sm-3 ">Loại thuốc</label>
-                                    <div class="col-md-5 col-sm-9 ">
-                                        <input type="text" class="form-control" id="three-medicine" placeholder="nhập loại thuốc" >
+                                        <textarea class="form-control" id="two-ins" rows="3" placeholder="Mời nhập"></textarea>
                                         <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--loai-->
+                                <!--Giới thiệu chung về sản phẩm-->
 
-
-                                <!--hoạt tính-->
-                                <div class="form-group row ">
-                                    <label class="control-label col-md-3 col-sm-3 ">Hoạt tính</label>
-                                    <div class="col-md-3 col-sm-9 ">
-                                        <input type="text" class="form-control" id="four-medicine" placeholder="Mời nhập số liệu">
+                                <!--Thông số kĩ thuật-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Thông số kĩ thuật<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-9 col-sm-9 ">
+                                        <textarea class="form-control" id="three-ins" rows="3" placeholder="Nhập thông số liệu"></textarea>
                                         <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--hoạt tính-->
-
-
-
-                                <!--hình thức-->
-                                <div class="form-group row ">
-                                    <label class="control-label col-md-3 col-sm-3 ">hình thức</label>
-                                    <div class="col-md-3 col-sm-9 ">
-                                        <input type="text" id="fire-medicine" class="form-control"
-                                            placeholder=" Nhập mô tả (viên nén,viên nhộng ,bột, ........)">
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--hình thức-->
-
-
-                                <!--Thành phần-->
+                                <!--Thông số kĩ thuật-->
+                                <!--Ưu điểm nổi bật-->
                                 <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Thành phần <span
+                                    <label class="control-label col-md-3 col-sm-3 ">Ưu điểm nổi bật<span
                                             class="required"></span>
                                     </label>
                                     <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="fires-medicine" rows="3"
-                                            placeholder="Mời nhập thành phần thuốc"></textarea>
-                                            <span class="text-error"></span>
+                                        <textarea class="form-control" id="four-ins" rows="3" placeholder="Ưu điểm"></textarea>
+                                        <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--Thành phần-->
-
-                                <!--chỉ định -->
+                                <!--Ưu điểm nổi bật-->
+                                <!--Hướng dẫn sử dụng-->
                                 <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 "> chỉ định<span
-                                            class="required"></span>
+                                    <label class="control-label col-md-3 col-sm-3 ">Hướng dẫn sử dụng<span class="required">*</span>
                                     </label>
                                     <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="six-medicine" rows="3"
-                                            placeholder="Nên dùng thuốc khi...."></textarea>
-                                            <span class="text-error"></span>
+                                        <textarea class="form-control" id="five-ins" rows="3" placeholder=" Nhập hướng dẫn sử dụng"></textarea>
+                                        <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--chỉ định-->
-                                <!--Chống chỉ định-->
+                                <!--Hướng dẫn sử dụng-->
+                                <!--Lưu ý-->
                                 <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Chống chỉ định <span
-                                            class="required"></span>
+                                    <label class="control-label col-md-3 col-sm-3 ">Lưu ý<span class="required">*</span>
                                     </label>
                                     <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="seven-medicine" rows="3"
-                                            placeholder="Không nên sử dụng với ....."></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Chống chỉ định-->
-                                <!--Liều dùng-->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Liều dùng <span
-                                            class="required"></span>
-                                    </label>
-                                    <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="eight-medicine" rows="3"
-                                            placeholder="Liều dùng"></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Liều dùng-->
-                                <!--Tác dụng phụ -->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Tác dụng phụ <span
-                                            class="required"></span>
-                                    </label>
-                                    <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="nine-medicine" rows="3"
-                                            placeholder="Tác dụng phụ"></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Tác dụng phụ-->
-                                <!--Lưu ý -->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Lưu ý<span class="required"></span>
-                                    </label>
-                                    <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="ten-medicine" rows="3"
-                                            placeholder="Mời nhập lưu ý"></textarea>
-                                            <span class="text-error"></span>
+                                        <textarea class="form-control" id="six-ins" rows="3" placeholder="Lưu ý"></textarea>
+                                        <span class="text-error"></span>
                                     </div>
                                 </div>
                                 <!--Lưu ý-->
-
-                                <!--Bảo quản-->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Bảo quản <span
-                                            class="required"></span>
-                                    </label>
-                                    <div class="col-md-9 col-sm-9 ">
-
-                                        <textarea class="form-control" id="tenn-medicine" rows="3"
-                                            placeholder="Hướng dẫn bảo quản"></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Bảo quản-->
-                                <!--Đóng gói -->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">Đóng gói <span
-                                            class="required"></span>
-                                    </label>
-                                    <div class="col-md-5 col-sm-9 ">
-
-                                        <textarea class="form-control" id="tennn-medicine" rows="3"
-                                            placeholder="Nhập số liệu đóng gói(Bao nhêu sản phẩm trong 1 hộp;vỉ;lọ......)"></textarea>
-                                            <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Đóng gói -->
-
-                                <!--Thương hiệu-->
-                                <div class="form-group row ">
-                                    <label class="control-label col-md-3 col-sm-3 ">Thương hiệu</label>
-                                    <div class="col-md-5 col-sm-9 ">
-                                        <input type="text" id="tennnn-medicine" class="form-control" placeholder="Nhập công ty sản xuất">
-                                        <span class="text-error"></span>
-                                    </div>
-                                </div>
-                                <!--Thương hiệu-->
-
                                 <!--Hạn sử dụng-->
                                 <div class="form-group row ">
                                     <label class="control-label col-md-3 col-sm-3 ">Hạn sử dụng</label>
                                     <div class="col-md-5 col-sm-9 ">
-                                        <input type="text" class="form-control" id="tennnnn-medicine"
-                                            placeholder="hạn sử dụng(Xngày ,Xtháng hoặc Xnăm kể từ ngày sản xuất)">
-                                            <span class="text-error"></span>
+                                        <input type="text" class="form-control" id="seven-ins" placeholder="mời nhập hạn sử dụng (X năm;số lần sử dụng tối đa)">
+                                        <span class="text-error"></span>
                                     </div>
                                 </div>
                                 <!--Hạn sử dụng-->
-
-                                <!--nơi sản xuất -->
-                                <div class="form-group row">
-                                    <label class="control-label col-md-3 col-sm-3 ">nơi sản xuất <span
-                                            class="required"></span>
-                                    </label>
-                                    <div class="col-md-5 col-sm-3 ">
-
-                                        <textarea class="form-control" id="tennnnnn-medicine" rows="3"
-                                            placeholder="nhập nơi sản xuất(công ti sản xuất; địa chỉ ;quốc tịch)"></textarea>
-                                            <span class="text-error"></span>
+                                <!--TÊN Sản Phẩm-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Bảo hành</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="eight-ins" placeholder="Mời nhập bảo hành (X ngày , X Tháng hoặc X năm)">
+                                        <span class="text-error"></span>
                                     </div>
                                 </div>
-                                <!--nơi sản xuất-->
-
-
+                                <!--Tên sản phẩm-->
+                                <!--TÊN Sản Phẩm-->
+                                <div class="form-group row ">
+                                    <label class="control-label col-md-3 col-sm-3 ">Liên hệ bảo hành</label>
+                                    <div class="col-md-5 col-sm-9 ">
+                                        <input type="text" class="form-control" id="nine-ins" placeholder="mời nhập số điện thoại trung tâm bảo hành của sản phẩm">
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--Tên sản phẩm-->
+                                <!--nội dung sản phẩm-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">bảo quản<span
+                                            class="required"></span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-5 ">
+                                        <textarea class="form-control" id="ten-ins" rows="3" placeholder="Nhập hướng dẫn bảo quản"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
+                                <!--nội dung sản phẩm-->
+                                <!--nội dung sản phẩm-->
+                                <div class="form-group row">
+                                    <label class="control-label col-md-3 col-sm-3 ">Xuất xứ<span class="required"></span>
+                                    </label>
+                                    <div class="col-md-5 col-sm-5 ">
+                                        <textarea class="form-control" id="tenn-ins" rows="3" placeholder="Xuất xứ (công ti sản xuất; địa chỉ ;quốc tịch)"></textarea>
+                                        <span class="text-error"></span>
+                                    </div>
+                                </div>
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-9 col-sm-9  offset-md-3">
                                         <button type="submit" class="btn btn-success">Nhập vào</button>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -365,13 +278,15 @@
     </div>
     </div>
     <!-- /page content -->
+
+    <!-- footer content -->
     <footer>
         <div class="pull-right">
             Gentelella - Bootstrap Admin Template by <a href="">Colorlib</a>
         </div>
         <div class="clearfix"></div>
     </footer>
-
+    <!-- /footer content -->
     </div>
     </div>
 
@@ -410,9 +325,10 @@
     <script src="../vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
-    <script src="../admin/js/validate/index.js"></script>
+    <!--ckedittor-->
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../admin/js/validate/validIns.js"></script>
 
 </body>
 
 </html>
-
