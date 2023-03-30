@@ -6316,5 +6316,19 @@ ul.notifications {
 	position: relative;
 	display: flex;
 	justify-content: center;
+} 
+/* ô thông tin sản phẩm không bị dài ra khi thêm các kí tự */
+.tv td{
+	
+			padding: 10px;
+			word-wrap: break-word;
+			max-width: 100px;
 }
+.tc td{
+	
+	padding: 10px;
+	word-wrap: break-word;
+	max-width: 100px;
+}
+
 
